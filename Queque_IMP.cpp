@@ -8,32 +8,7 @@ using namespace std;
 template <typename T>
 using QUEUE = queue<T>;
 
-void demoQueue() {
-    cout << "--- QUEUE (FIFO: First In, First Out) ---" << endl;
-    QUEUE<int> cola;
 
-    
-    cola.push(10); // Primero en entrar (Front)
-    cola.push(20);
-    cola.push(30); // Último en entrar (Back)
-    cout << "Insertados: 10, 20, 30" << endl;
-
-    
-    cout << "Elemento frontal (front): " << cola.front() << endl; 
-    
-    
-    cout << "Elemento posterior (back): " << cola.back() << endl;
-
-    
-    cout << "Tamano inicial: " << cola.size() << endl;
-
-   
-    cola.pop();
-    cout << "Se ejecuto POP. Nuevo elemento frontal: " << cola.front() << endl;
-
-    
-    cout << "¿Esta vacia?: " << (cola.empty() ? "Si" : "No") << endl;
-}
 
 int main() {
     cout << "--- QUEUE (FIFO) - Casos de Prueba ---" << std::endl;

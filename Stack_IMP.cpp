@@ -8,33 +8,6 @@ using namespace std;
 template <typename T>
 using STACK = stack<T>; 
 
-void demoStack() {
-    cout << "--- STACK (LIFO: Last In, First Out) ---" << endl;
-    STACK<string> pila;
-
-  
-    pila.push("Tercero (Top)");
-    pila.push("Segundo");
-    pila.push("Primero (Bottom)");
-    cout << "Insertados: Primero, Segundo, Tercero" << endl;
-
-   
-    cout << "Elemento superior (top): " << pila.top() << endl;
-
-  
-    cout << "Tamanio inicial: " << pila.size() << endl;
-
-    
-    pila.pop();
-    cout << "Se ejecuto POP. Nuevo elemento superior: " << pila.top() << endl;
-
-    
-    cout << "¿Esta vacia?: " << (pila.empty() ? "Si" : "No") << endl;
-
-    pila.pop();
-    pila.pop();
-    cout << "¿Esta vacia después de 3 pops?: " << (pila.empty() ? "Si" : "No") << endl;
-}
 
 int main() {
     cout << "--- STACK (LIFO) - Casos de Prueba ---" << endl;

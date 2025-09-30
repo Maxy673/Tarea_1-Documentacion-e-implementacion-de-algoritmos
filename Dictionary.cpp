@@ -8,39 +8,7 @@ using namespace std;
 template <typename Key, typename Value>
 using DICTIONARY = unordered_map<Key, Value>; 
 
-void demoDictionary() {
-    cout << "--- DICTIONARY/HASH (Key-Value) ---" << endl;
-    DICTIONARY<string, int> diccionario;
 
-    // 1. INSERTAR/MODIFICAR (Insert, operador [])
-    diccionario["Manzana"] = 5;
-    diccionario.insert({"Banana", 3});
-    diccionario["Naranja"] = 8;
-    cout << "Insertados 3 pares: Manzana, Banana, Naranja" << endl;
-
-    
-    cout << "Stock de Manzana: " << diccionario.at("Manzana") << endl;
-
-    
-    if (diccionario.count("Banana")) {
-        cout << "Banana está en el inventario. Valor: " << diccionario["Banana"] << endl;
-    }
-
-    
-    diccionario.erase("Banana");
-    cout << "Se elimino Banana. Nuevo tamanio: " << diccionario.size() << endl;
-
-    
-    cout << "Elementos restantes:" << endl;
-    for (const auto& par : diccionario) {
-        cout << "  Key: " << par.first << ", Value: " << par.second << endl;
-    }
-
-    
-    cout << "¿Está vacio?: " << (diccionario.empty() ? "Si" : "No") << endl;
-    diccionario.clear();
-    cout << "Se ejecuto CLEAR. ¿Está vacio?: " << (diccionario.empty() ? "Si" : "No") << endl;
-}
 
 int main() {
     cout << "--- DICTIONARY/HASH (Key-Value) - Casos de Prueba ---" << endl;
