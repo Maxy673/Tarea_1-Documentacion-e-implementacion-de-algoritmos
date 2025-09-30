@@ -25,20 +25,20 @@ void demoQueue() {
     cout << "Elemento posterior (back): " << cola.back() << endl;
 
     
-    cout << "Tamaño inicial: " << cola.size() << endl;
+    cout << "Tamano inicial: " << cola.size() << endl;
 
    
     cola.pop();
-    cout << "Se ejecutó POP. Nuevo elemento frontal: " << cola.front() << endl;
+    cout << "Se ejecuto POP. Nuevo elemento frontal: " << cola.front() << endl;
 
     
-    cout << "¿Está vacía?: " << (cola.empty() ? "Sí" : "No") << endl;
+    cout << "¿Esta vacia?: " << (cola.empty() ? "Si" : "No") << endl;
 }
 
 int main() {
     cout << "--- QUEUE (FIFO) - Casos de Prueba ---" << std::endl;
     
-    // Caso de Prueba 1: Operación FIFO Estándar
+    // Caso de Prueba 1: Operacion FIFO Estandar
     QUEUE<int> cola1;
     cola1.push(100); // Frontal
     cola1.push(200);
@@ -53,7 +53,7 @@ int main() {
 
     cout << "----------------------------------------" << endl;
 
-    // Caso de Prueba 2: Comprobación de Ambos Extremos (front y back)
+    // Caso de Prueba 2: Comprobacion de Ambos Extremos (front y back)
     QUEUE<string> cola2;
     cola2.push("A"); // Frontal
     cola2.push("B");
@@ -69,11 +69,11 @@ int main() {
     cout << "   Nuevo posterior (esperado D): " << cola2.back() << endl;
     cout << "----------------------------------------" << endl;
     
-    // Caso de Prueba 3: Depleción Total de la Cola
+    // Caso de Prueba 3: Deplecion Total de la Cola
     QUEUE<double> cola3;
     cola3.push(1.1);
     cola3.push(2.2);
-    cout << "Caso 3: Depleción total y size()." << endl;
+    cout << "Caso 3: Deplecion total y size()." << endl;
     cout << "   Tamanio inicial (esperado 2): " << cola3.size() <<endl;
     cola3.pop();
     cola3.pop();
